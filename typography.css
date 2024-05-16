@@ -1,0 +1,242 @@
+/* Home Page */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.site-title {
+    font-family: Georgia;
+    font-size: 60px;
+    text-align: center;
+
+  }
+
+input[type="text"]::placeholder {
+    font-family:  Georgia;
+    font-size: 20px;
+  }
+
+.buy-now {
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Gill Sans';
+}
+
+.ad-text h1 {
+    font-size: 40px;
+    font-family:'Gill Sans';
+}
+
+.ad-text h2 h3 {
+    font-size: 30px;
+    font-family:'Gill Sans';
+}
+
+.home-button {
+    font-size: 16px;
+    font-family: 'Gill Sans';
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+
+.ingredients-text {
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+
+.who-are-we h1 {
+    font-family: 'Courier New';
+    font-size: 5rem;
+
+}
+
+.who-are-we p {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 2.5rem;
+}
+
+
+.footer-links a{
+    text-decoration: underline;
+    font-size: 2rem;
+    color: black;
+    font-family:'Gill Sans';
+}
+
+/* Products Page */
+.dog-products-title {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Gill Sans';
+}
+
+.filter, .sort {
+    color:#fff;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Georgia;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    font-family: Georgia;
+    text-decoration: underline;
+}
+
+.product-info p {
+    font-size: 16px;
+    font-family: Georgia;
+}
+
+
+.product-info button {
+    font-size: 16px;
+    font-family: 'Gill Sans';
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+/* Product Page */
+.product-header a {
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Georgia;
+    color:#fff;
+}
+
+.product-title h1 {
+    font-family: Georgia;
+    font-size: 70px;
+}
+
+.product-title h2, h3 {
+    font-family: Georgia;
+    font-size: 40px;
+}
+
+.product-page-info button {
+    font-size: 16px;
+    font-family: 'Gill Sans';
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.product-details h2, .review-titles h2 {
+    font-size: 40px;
+    color:#fff;
+    text-decoration: underline;
+    font-family: 'Courier New';
+}
+
+.product-details p, .review-titles h4 {
+    font-size: 25px;
+    color:#fff;
+    font-family: 'Gill Sans';
+}
+
+.empty-stars p{
+    font-size: 20px;
+    color:#fff;
+    font-family: 'Gill Sans';
+}
+
+input[type="text"]::placeholder {
+    font-size: 16px;
+    font-family:  Georgia;
+  }
+
+.submit-btn {
+    font-size: 16px;
+    font-family: 'Gill Sans';
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.user-reviews h5 ,p {
+    font-size: 20px;
+    color:#fff;
+}
+
+
+/* Cart Confirm */
+.confirmation-header h4 {
+    font-size: 16px;
+    font-family: 'Gill Sans';
+    color:#fff;
+}
+
+.confirm-product-details h3 {
+    color:#fff;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.confirm-product-details p {
+    color:#fff;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.review-cart-btn, .checkout-btn {
+    font-size: 16px;
+    color:#fff;
+    font-family: 'Gill Sans';
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.confirm-btns a {
+    color:#fff;
+    font-family: Georgia;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+/* Cart Page */
+
+.cart-header h3 {
+    font-family: Georgia;
+    font-size: 50px;
+    color:#fff;
+}
+
+.cart-header p {
+    font-family: Georgia;
+    font-size: 20px;
+    color:#fff;
+    text-decoration: underline;
+}
+
+.cart-items p {
+    font-family: Georgia;
+    font-size: 20px;
+    color:black;
+}
+
+.cart-checkout-btn {
+    font-size: 28px;
+    color:#fff;
+    font-family: 'Gill Sans';
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.cart-footer h3{
+    font-size: 24px;
+    font-family: 'Gill Sans';
+    color:#fff;
+}
+
+/* Checkout */
+
+
+
+
+
+
+

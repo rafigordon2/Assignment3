@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Gordon">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colour.css">
+    <link rel="stylesheet" href="typography.css">
 </head>
 
 
 
 <body>
-    <header>
-        <div class="header-container">
-
-            
-            <img src="/Assets/Hamburger.png" alt="Menu" class="menu-icon">
-            
-
-            <div class="site-title">
-                A La Carte
+    <div class="background-color-product">
+        <header>
+            <div class="header-container">
+    
+                
+                <img src="/Assets/Hamburger.png" alt="Menu" class="menu-icon">
+                
+    
+                <div class="site-title">
+                    A La Carte
+                </div>
+               
+                <div class="user">
+                    <img src="/Assets/AccountIcon.png" alt="User">
+                </div>
             </div>
-
+    
             <div class="search-bar">
                 <input type="text" placeholder="Search products..." name="search">
                 <button type="submit"><img src="/Assets/SearchIcon.png" alt="Search"></button>
             </div>
-
-            <div class="user-cart">
-                <img src="/Assets/AccountIcon.png" alt="User">
-                <img src="/Assets/cart-icon.png" alt="Cart">
-                <span class="cart-quantity">0</span>
-            </div>
-        
-        </div>
-    </header>
+            
+        </header>
 
 
     <main>
@@ -56,14 +57,14 @@
     <section class="cart-items">
 
         <article class="cart-item">
-            <img src="/Assets/Dog1.png" alt="Chicken & Rice">
+            <img src="/Assets/Dog1.png" alt="Chicken & Rice" class="cart-product">
             <p>Chicken & Rice</p>
             <p>$39.95</p>
             <p>Medium to Large Breeds</p>
             <P>Total: $39.95</P>
-            <img src="/Assets/Minus.png" alt="Minus">
+            <img src="/Assets/Minus.png" alt="Minus" class="minus">
             <p>1</p>
-            <img src="/Assets/Plus.png" alt="Plus">
+            <img src="/Assets/Plus.png" alt="Plus" class="plus">
         </article>
 
     </section>
@@ -72,7 +73,7 @@
         <h3 class="subtotal">Subtotal:</h3>
         <h3 class="subtotal">$39.95</h3>
 
-        <a href="checkout1.html" class="cart-checkout-btn">CHECKOUT</a>
+        <button class="cart-checkout-btn">CHECKOUT</button>
 
     </section>
     
@@ -80,6 +81,7 @@
 
 
     </main>
+    </div>
    
 
 </body>

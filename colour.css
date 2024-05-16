@@ -1,0 +1,169 @@
+
+/* Home Page */
+.background-color-home {
+  background-image: linear-gradient(to bottom, #310000, #DD6A00);
+}
+
+.site-title {
+  color: #FFF;
+}
+
+.input  {
+  background-color: rgba(255, 255, 255, 32%);
+  border-radius: 30px;
+}
+
+.input::placeholder {
+  color: #fff; 
+}
+
+.ad-text {
+  color: #fff;
+}
+
+.buy-now {
+  background-color: #2E9784;
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.buy-now:hover {
+  background-color: #208072;
+}
+
+.dog-products {
+  background-image: linear-gradient(-30deg, rgba(124, 179, 66, 0.75), rgba(167, 229, 218, 0.43));
+  
+}
+
+.cat-products {
+  background-image: linear-gradient(-30deg, rgba(124, 179, 66, 0.75), rgba(167, 229, 218, 0.43));
+}
+
+.home-button:hover {
+  background-color: #689F38; /* Change background color on hover */
+}
+
+
+
+hr {
+  border: none;
+  height: 5px;
+  background-color: #282100;
+}
+
+
+
+.who-are-we {
+  background-color: rgba(124, 179, 66, 50%)
+}
+
+
+.footer-container {
+  background-color: rgba(46, 151, 132, 75%)
+}
+
+/* Products Page */
+.background-color-products{
+  background-image: linear-gradient(to bottom, #310000, #DD6A00);
+}
+
+.product-card {
+  background-color: blue;
+}
+
+.product-info button {
+  background-color: #7CB342;
+  text-decoration: none; /* Remove default underline */
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.product-info button:hover {
+  background-color: #689F38; /* Change background color on hover */
+}
+
+.product-info {
+  color:#fff;
+}
+
+
+/* Product Page */
+.background-color-product{
+  background-image: linear-gradient(to bottom, #310000, #DD6A00);
+}
+
+.product-title {
+  color:#fff;
+}
+
+.product-page-info button {
+  background-color: #7CB342;
+  text-decoration: none; /* Remove default underline */
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.product-page-info button:hover {
+  background-color: #689F38; /* Change background color on hover */
+}
+
+.review-form input {
+  background-color: rgba(217,217, 217, 32%);
+  border: 1px solid #7CB342;
+}
+
+.submit-btn {
+  background-color: #7CB342;
+  text-decoration: none; /* Remove default underline */
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.submit-btn:hover {
+  background-color: #689F38; /* Change background color on hover */
+}
+
+.mark-review {
+  background-color: #7CB342;
+}
+
+.sarah-review {
+  background-color: #7CB342;
+}
+
+/* Cart Confirm */
+.review-cart-btn, .checkout-btn {
+  background-color: #7CB342;
+  text-decoration: none; /* Remove default underline */
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.review-cart-btn, .checkout-btn:hover {
+  background-color: #689F38; /* Change background color on hover */
+}
+
+.confirm-add-to-cart {
+  background-image: linear-gradient(-30deg, rgba(124, 179, 66, 0.75), rgba(167, 229, 218, 0.43));
+}
+ 
+/* Cart Page */
+.cart-items {
+  background-color: rgba(251,251,251,75%);
+}
+
+.cart-checkout-btn {
+  background-color: #7CB342;
+  text-decoration: none; /* Remove default underline */
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cart-checkout-btn:hover {
+  background-color: #689F38; /* Change background color on hover */
+}
+
+.cart-footer h3{
+  background-color: #7CB342;
+   
+}
+
+/* Checkout */
+

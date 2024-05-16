@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Gordon">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colour.css">
+    <link rel="stylesheet" href="typography.css">
 </head>
 
 
 
 <body>
+    <div class="background-color-home">
     <header>
         <div class="header-container">
 
@@ -22,18 +25,16 @@
                 A La Carte
             </div>
 
-            <div class="search-bar">
-                <input type="text" placeholder="Search products..." name="search">
-                <button type="submit"><img src="/Assets/SearchIcon.png" alt="Search"></button>
+            <div class="user">
+                <img src="/Assets/AccountIcon.png" alt="User">
             </div>
 
-            <div class="user-cart">
-                <img src="/Assets/AccountIcon.png" alt="User">
-                <img src="/Assets/cart-icon.png" alt="Cart">
-                <span class="cart-quantity">0</span>
-            </div>
-        
         </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." name="search" class="input">
+                <img src="/Assets/SearchIcon.png" alt="Search"></img>
+            </div>
     </header>
 
 
@@ -44,17 +45,18 @@
                 
                 <img src="/Assets/LeftArrow.png" alt="Left" class="home-left-arrow">
             
+            <div class="image-wrapper">
                 <img src="/Assets/ChefDog.png" alt="Chef Dog" class="chef-dog">
-                
+            </div>  
+
                 <div class="ad-text">
-                    <h1>Made for dogs,</h1>
-                    <h2>15kg for $75</h2>
                     <h3>Fresh off the stove...</h3>
                 </div>
                
                 <button type="button" class="buy-now">Buy Now!</button>
+                
             
-                 <img src="/Assets/GourmetFood.png" alt="Gourment Food" class="gourment-food">
+                 <img src="/Assets/GourmetFood.png" alt="Gourment Food" class="gourmet-food">
                 
                 <img src="/Assets/RightArrow.png" alt="Right" class="home-right-arrow">
             
@@ -66,23 +68,28 @@
             <div class="product-pages">
 
                 <div class="dog-products">
-                    <img src="/Assets/Dog.png" alt="Dog Image" class="dog-iamge">
+                    <img src="/Assets/Dog.png" alt="Dog Image" class="dog-image">
                     
-                    <a href="dogproducts.html" class="home-button">DOG PRODUCTS</a>
+                    <button class="home-button">DOG PRODUCTS</button>
                 </div>
 
                 <div class="cat-products">
                      <img src="/Assets/Cat.png" alt="Cat Image" class="cat-image">
                    
-                    <a href="/catproducts.html" class="home-button">DOG PRODUCTS</a>
+                     <button class="home-button">CAT PRODUCTS</button>
                 </div>
 
             </div>
         </section>
-    
-        <hr>
 
-        <figure>
+
+        <figure class="figure-1">
+
+            <div class="product-ad">
+
+            </div>
+
+
             <div class="ingredients">
 
                 <img src="/Assets/Ingredients.png" alt="Ingredients Infographic" class="ingredients-img">
@@ -90,25 +97,34 @@
                 <div class="pointers"></div>
 
                 <div class="ingredients-text">
-                    <figcaption>Premium natural ingredients</figcaption>
-                    <figcaption>Natural anti-oxidants for a better immune system</figcaption>
-                    <figcaption>Probiotics for instestinal health</figcaption>
+                    <figcaption>1. Premium natural ingredients</figcaption>
+                    <figcaption>2. Natural anti-oxidants for a better immune system</figcaption>
+                    <figcaption>3. Probiotics for instestinal health</figcaption>
                 </div>
 
             </div>
+
+            <div class="product-ad">
+
+            </div>
+
+            
         </figure>
 
         <hr>
-
+    </div>
         <section>
             <div class="who-are-we">
                 <h1>Who are we?</h1>
-                <p>Creating quality food has always been our family passion. Once we got the idea for 'A La Carte', we took the time to research and create formulas for a large name brand. We knew exactly what we had to do to create the best product possible when it came to making our mark in the pet food market.</p>
-                <img src="/Assets/AboutUs.png" alt="Dog on a farm">
+                <div class="about-us">
+                    <p>Creating quality food has always been our family passion. Once we got the idea for 'A La Carte', we took the time to research and create formulas for a large name brand. We knew exactly what we had to do to create the best product possible when it came to making our mark in the pet food market.</p>
+                    <img src="/Assets/AboutUs.png" alt="Dog on a farm">
+                </div>
             </div>
         </section>
     
     </main>
+    
    
 
     <footer>

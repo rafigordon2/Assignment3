@@ -1,0 +1,463 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+}
+
+img {
+    max-width: 100vw;
+    height: auto;
+}
+
+.header-container {
+    display: grid;
+    grid-auto-flow: column;
+    overflow: auto;
+    place-content: left;
+    text-align: center;
+    height: 10vh; 
+    width: 100%; 
+}
+
+.site-title {
+    padding-top: 1rem;
+}
+
+.user img {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 3rem;;
+    float: right;
+    height: auto;
+}
+
+.menu-icon {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    max-width: 3rem;
+}
+
+.search-bar {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.search-bar img {
+    margin-left: -2.6rem;
+}
+
+.input {
+    height: 2.5rem;
+    flex-grow: 1;
+}
+
+.input::placeholder {
+    padding-left: 1rem;
+}
+
+.search-bar img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.footer-container {
+    display: grid;
+    position: sticky;
+    gap: 0.5rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-auto-flow:column;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+
+}
+
+.footer-icons {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+}
+
+.footer-icons img {
+    max-height: 2rem;
+}
+
+
+
+/* Home Page */
+.slideshow {
+    overflow: hidden;
+    align-items: end center;
+    background-color: rgba(46, 151, 132, 0.45) !important;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    text-align: center;
+    height: 35vh; 
+    width: 100%; 
+}
+
+.chef-dog {    
+    max-width: 13.1rem;
+    justify-content: center;
+    height: auto;
+}
+
+
+.gourmet-food {
+    max-width: 10rem;
+    object-fit: contain;
+    justify-content: center;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.ad-text {
+    height: 100%; /* Make ad-text take the full height of the container */
+    place-content: center;
+}
+
+.ad-text h3 {
+    font-size: 3.5rem;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.buy-now {
+    align-self: center;
+    place-content: center;
+    object-fit: contain;
+    width: 14rem;
+    height: 3rem;
+}
+
+
+.home-left-arrow{
+    align-self: center;
+    margin: auto;
+}
+
+.home-right-arrow{
+    align-self: center;
+    margin: auto;
+}
+.product-pages {
+    display: grid;
+    grid-auto-flow: column;
+    height: 40vh;
+    column-gap: 3rem;
+    margin: 2rem;
+}
+
+.dog-products, .cat-products {
+    border-radius: 50px;
+    width: 40rem;
+    height: 20rem;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 0.5rem;
+    place-content: center;
+    text-align: center;
+    max-width: 100%; 
+    position: relative;
+    
+}
+
+.dog-image {
+    overflow: visible;
+    margin-bottom: 3rem;
+    max-width: 18rem;
+    place-content: center;
+    height: auto;
+}
+
+.cat-image {
+    overflow: visible;
+    margin-bottom: 1rem;
+    max-width: 19rem;
+    place-content: center;
+    height: auto;
+}
+
+.home-button {
+    background-color: #7CB342;
+    border-radius: 30px;
+    width: 30rem;
+    color: #fff;
+    text-decoration: none; /* Remove default underline */
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+    position: absolute; /* Position the button absolutely */
+    bottom: 50%; /* Adjust the position as needed */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 1rem; /* Add padding for better appearance */
+
+  }
+
+.figure-1 {
+    border: 2px solid red;
+    height: 80vh; 
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    column-gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.product-ad {
+    border: 2px solid red;
+}
+
+.ingredients {
+    background: linear-gradient(to bottom, rgba(124, 179, 66, 0.25), #fff);
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    place-items: center;
+}
+
+.ingredients-img {
+    max-width: 100%;
+    place-content: center;
+    height: auto;
+}
+
+.ingredients-text {
+    display: grid;
+    text-align: center;
+    grid-auto-flow: column;
+}
+
+.who-are-we {
+    overflow: hidden;
+    place-content: center;
+    text-align: center;
+    height: 80vh; 
+    width: 100%; 
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 1rem 1rem 0rem;
+}
+
+.who-are-we img {
+    width: 46rem;
+    padding: 1rem;
+    height: auto;
+}
+
+.who-are-we h1, p {
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+    
+
+/* Products Page */
+.product-info button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.products-header {
+    border: 2px solid red;
+}
+.products {
+    border: 2px solid red;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    place-content: center;
+}
+
+.product-card {
+    border: 2px solid red;
+    width: 200px;
+}
+
+.product-card img {
+    border: 2px solid red;
+    width: 100%;
+}
+
+/* Product Page */
+.product-header {
+    border: 2px solid red;
+}
+
+.product-page-info {
+    border: 2px solid red;
+}
+
+.product-title {
+    border: 2px solid red;
+}
+
+.product-image-main {
+    border: 2px solid red;
+}
+
+.product-images-small img {
+    border: 2px solid red;
+    width: 60px;
+}
+
+.product-details {
+    border: 2px solid red;
+}
+
+.reviews {
+    border: 2px solid red;
+}
+
+.write-review {
+    border: 2px solid red;
+    float: left;
+}
+
+.user-reviews {
+    float: right;
+    display: inline-block;
+    border: 2px solid red;
+}
+
+.sarah-review {
+    border: 2px solid red;
+    padding: 1rem;
+}
+
+.mark-review {
+    border: 2px solid red;
+    padding: 1rem;
+}
+
+.product-page-info button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Cart Confirm */
+
+.confirm-add-to-cart {
+    border: 2px solid red;
+}
+
+.confirmation-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.confirm-product-details img{
+    width: 15rem;
+}
+
+.review-cart-btn, .checkout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Cart Page */
+.cart-header {
+    border: 2px solid red;
+}
+
+.cart-items{
+    border: 2px solid red;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid red;
+}
+
+.cart-item
+
+.cart-product {
+    width: 10rem;
+}
+
+.minus, .plus {
+    width: 3rem;
+}
+
+.cart-footer {
+    border: 2px solid red;
+}
+
+
+.cart-checkout-btn {
+    padding: 10px 20px;
+    border-radius: 50px; /* Adjust the value to control the roundness */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Checkout */
+.order-summary {
+    border: 2px solid red;
+}
+
+.contact {
+    border: 2px solid red;
+}
+
+.address {
+    border: 2px solid red;
+}
+
+.payment {
+    border: 2px solid red;
+}
+
+.payment-form {
+    border: 2px solid red;
+}
+
+.checkout-footer {
+    border: 2px solid red;
+}
+
+.checkout-prices {
+    border: 2px solid red;
+}
