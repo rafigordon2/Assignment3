@@ -1,71 +1,81 @@
 /* Home Page */
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-
-.site-title {
+.site-title h1 {
     font-family: Georgia;
-    font-size: 60px;
+    font-size: 4rem;
     text-align: center;
 
   }
 
-input[type="text"]::placeholder {
+.search-bar input[type="text"]::placeholder {
     font-family:  Georgia;
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
+  .footer-links a{
+    text-decoration: underline;
+    font-size: 2rem;
+    color: black;
+    font-family:'Gill Sans';
+}
+
+
+
+/* Home Page */
 .buy-now {
-    font-size: 20px;
+    font-size: 2rem;
     cursor: pointer;
     font-family: 'Gill Sans';
 }
 
-.ad-text h1 {
-    font-size: 40px;
+.ad-text h3 {
+    font-size: 3.5rem;
     font-family:'Gill Sans';
+    font-style: italic;
+    color: #fff;
 }
 
-.ad-text h2 h3 {
-    font-size: 30px;
-    font-family:'Gill Sans';
-}
 
 .home-button {
-    font-size: 16px;
+    font-size: 1.5rem;
+    font-style: italic;
     font-family: 'Gill Sans';
-    text-decoration: none; /* Remove default underline */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none; 
+    cursor: pointer; 
+    color: #fff;
   }
 
 
 .ingredients-text {
     font-family: Georgia;
-    font-size: 20px;
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 
 .who-are-we h1 {
     font-family: 'Courier New';
     font-size: 5rem;
-
 }
 
-.who-are-we p {
+.who-are-we h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+
+.about-us {
     text-align: center;
-    font-family: Georgia;
-    font-size: 2.5rem;
+    font-family: 'Courier New';
+    font-style: italic;
+    color: white;
 }
 
-
-.footer-links a{
-    text-decoration: underline;
+.about-us p {
     font-size: 2rem;
-    color: black;
-    font-family:'Gill Sans';
 }
+
+
 
 /* Products Page */
 .dog-products-title {

@@ -1,3 +1,9 @@
+/*
+Paw cursor 
+caret cursor
+
+
+
 /*General*/
 * {
     margin: 0;
@@ -8,6 +14,7 @@
 body {
     min-height: 100vh;
     display: grid;
+    cursor: url('Assets/paw.png'), auto;
 }
 
 img {
@@ -55,14 +62,42 @@ img {
 
 .search-bar img {
     margin-left: -2.6rem;
+    z-index: 1000;
 }
 
-.input {
+.search-bar input {
     height: 2.5rem;
     flex-grow: 1;
 }
+/* Basic styling for the input field */
+.search-bar input {
+    padding-top: 0.5rem;
+    outline: none;
+    caret-color: black; /* Hide the default caret */
+    position: relative;
+}
 
-.input::placeholder {
+.search-bar input::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem; /* Adjust to match padding */
+    right: 5rem; /* Adjust to control the left position */
+    width: 0.2rem; /* Width of the caret */
+    height: calc(100% - 1rem); /* Adjust height to fit inside the input */
+    background-color: black; /* Color of the caret */
+    animation: blink 1s step-end infinite; /* Blinking animation */
+    pointer-events: none; /* Prevent the pseudo-element from intercepting clicks */
+}
+
+
+/* Keyframes for the blinking animation */
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
+
+.search-bar input::placeholder {
     padding-left: 1rem;
 }
 
@@ -119,7 +154,6 @@ img {
     height: auto;
 }
 
-
 .gourmet-food {
     max-width: 10rem;
     object-fit: contain;
@@ -134,7 +168,6 @@ img {
 }
 
 .ad-text h3 {
-    font-size: 3.5rem;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -146,8 +179,8 @@ img {
     object-fit: contain;
     width: 14rem;
     height: 3rem;
+    border-radius: 30px;
 }
-
 
 .home-left-arrow{
     align-self: center;
@@ -158,6 +191,7 @@ img {
     align-self: center;
     margin: auto;
 }
+
 .product-pages {
     display: grid;
     grid-auto-flow: column;
@@ -177,7 +211,6 @@ img {
     text-align: center;
     max-width: 100%; 
     position: relative;
-    
 }
 
 .dog-image {
@@ -197,18 +230,18 @@ img {
 }
 
 .home-button {
-    background-color: #7CB342;
     border-radius: 30px;
     width: 30rem;
-    color: #fff;
-    text-decoration: none; /* Remove default underline */
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
-    position: absolute; /* Position the button absolutely */
-    bottom: 50%; /* Adjust the position as needed */
-    left: 50%; /* Center the button horizontally */
-    transform: translateX(-50%); /* Center the button horizontally */
-    padding: 1rem; /* Add padding for better appearance */
+    position: absolute; 
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 0.5rem; 
+  }
 
+  hr {
+    border: none;
+    height: 1rem;
   }
 
 .figure-1 {
@@ -226,7 +259,6 @@ img {
 }
 
 .ingredients {
-    background: linear-gradient(to bottom, rgba(124, 179, 66, 0.25), #fff);
     border-radius: 30px;
     overflow: hidden;
     text-align: center;
@@ -240,6 +272,7 @@ img {
 }
 
 .ingredients-text {
+    padding-top: 1rem;
     display: grid;
     text-align: center;
     grid-auto-flow: column;
@@ -249,32 +282,31 @@ img {
     overflow: hidden;
     place-content: center;
     text-align: center;
-    height: 80vh; 
+    height: 70vh; 
     width: 100%; 
 }
 
 .about-us {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0rem 1rem 1rem 0rem;
+    margin: 1rem;
+    border-radius: 30px;
 }
 
 .who-are-we img {
-    width: 46rem;
-    padding: 1rem;
-    height: auto;
+    margin-left: 4rem;
+    width: 40rem;
+    height: 100%;
+    border-radius: 30px;
 }
 
-.who-are-we h1, p {
-    margin: 0.5rem;
+.who-are-we p {
+    margin-left: 3rem;
+    margin-top: 1rem;
 }
 
 
 
-
-
-
-    
 
 /* Products Page */
 .product-info button {
