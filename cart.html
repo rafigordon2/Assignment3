@@ -22,19 +22,21 @@
                 
     
                 <div class="site-title">
-                    A La Carte
+                    <h1>A La Carte</h1>
                 </div>
-               
+    
                 <div class="user">
                     <img src="/Assets/AccountIcon.png" alt="User">
                 </div>
+    
+                
+    
             </div>
     
-            <div class="search-bar">
-                <input type="text" placeholder="Search products..." name="search">
-                <button type="submit"><img src="/Assets/SearchIcon.png" alt="Search"></button>
-            </div>
-            
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." name="search" class="input">
+                    <img src="/Assets/SearchIcon.png" alt="Search"></img>
+                </div>
         </header>
 
 
@@ -54,24 +56,34 @@
         <p>Edit Cart</p>
     </div>
 
+    <div class="cart-titles">
+        <p>Item</p>
+        <p>Unit Price</p>
+        <p>Quantity</p>
+        <p>Price</p>
+    </div>
+
     <section class="cart-items">
 
         <article class="cart-item">
             <img src="/Assets/Dog1.png" alt="Chicken & Rice" class="cart-product">
-            <p>Chicken & Rice</p>
+            <h2>Chicken & Rice</h2>
             <p>$39.95</p>
-            <p>Medium to Large Breeds</p>
-            <P>Total: $39.95</P>
-            <img src="/Assets/Minus.png" alt="Minus" class="minus">
-            <p>1</p>
-            <img src="/Assets/Plus.png" alt="Plus" class="plus">
+            <span class="quantity">
+                <img src="/Assets/Minus.png" alt="Minus" class="minus">
+                <p>1</p>
+                <img src="/Assets/Plus.png" alt="Plus" class="plus">
+            </span>
+            <p>$39.95</p>
         </article>
 
     </section>
 
     <section class="cart-footer">
-        <h3 class="subtotal">Subtotal:</h3>
-        <h3 class="subtotal">$39.95</h3>
+        <span class="subtotal">
+            <h2>Subtotal:</h3>
+            <h3>$39.95</h3>
+        </span>
 
         <button class="cart-checkout-btn">CHECKOUT</button>
 

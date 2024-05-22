@@ -50,7 +50,7 @@
 }
 
 .home-button:hover {
-  background-image: linear-gradient(-30deg, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
 }
 
 hr {
@@ -75,22 +75,19 @@ hr {
   background-image: linear-gradient(to bottom, #310000, #DD6A00);
 }
 
-.product-card {
-  background-color: blue;
+.product-card, .product-card-home {
+  background: linear-gradient(to bottom, rgba(124, 179, 66, 0.75) 0%, rgba(167, 229, 218, 0.43) 100%);
+  border: solid 1px rgba(0, 42, 35, 0.721);
 }
 
 .product-info button {
-  background-color: #7CB342;
-  text-decoration: none; /* Remove default underline */
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+  background: radial-gradient(circle, rgba(124, 179, 66, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
 }
 
 .product-info button:hover {
-  background-color: #689F38; /* Change background color on hover */
-}
-
-.product-info {
-  color:#fff;
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
 }
 
 
@@ -103,14 +100,22 @@ hr {
   color:#fff;
 }
 
-.product-page-info button {
-  background-color: #7CB342;
-  text-decoration: none; /* Remove default underline */
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+.col-2 button {
+  background: radial-gradient(circle, rgba(124, 179, 66, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
 }
 
-.product-page-info button:hover {
-  background-color: #689F38; /* Change background color on hover */
+.col-2 button:hover {
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
+}
+
+.img-main {
+  background: radial-gradient(circle, rgba(124, 179, 66, 0.75) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.img1, .img2, .img3 {
+  background: radial-gradient(circle, rgba(124, 179, 66, 0.75) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .review-form input {
@@ -119,14 +124,15 @@ hr {
 }
 
 .submit-btn {
-  background-color: #7CB342;
-  text-decoration: none; /* Remove default underline */
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+  background: radial-gradient(circle, rgba(124, 179, 66, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
 }
 
 .submit-btn:hover {
-  background-color: #689F38; /* Change background color on hover */
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
 }
+
 
 .mark-review {
   background-color: #7CB342;
@@ -137,39 +143,79 @@ hr {
 }
 
 /* Cart Confirm */
-.review-cart-btn, .checkout-btn {
-  background-color: #7CB342;
-  text-decoration: none; /* Remove default underline */
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+.review-cart-btn, .cart-confrim-checkout-btn {
+  background: radial-gradient(circle, rgba(124, 179, 66, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
 }
 
-.review-cart-btn, .checkout-btn:hover {
-  background-color: #689F38; /* Change background color on hover */
+.review-cart-btn:hover, .cart-confrim-checkout-btn:hover {
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
 }
 
 .confirm-add-to-cart {
-  background-image: linear-gradient(-30deg, rgba(124, 179, 66, 0.75), rgba(167, 229, 218, 0.43));
+  background-image: linear-gradient(180deg, rgba(124, 179, 66, 0.75), rgba(167, 229, 218, 0.43));
 }
  
 /* Cart Page */
-.cart-items {
+.cart-item {
   background-color: rgba(251,251,251,75%);
 }
+.quantity p {
+  background-color: #fff;
+} 
 
 .cart-checkout-btn {
-  background-color: #7CB342;
-  text-decoration: none; /* Remove default underline */
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+  background: radial-gradient(circle, rgba(114, 185, 37, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
 }
 
 .cart-checkout-btn:hover {
-  background-color: #689F38; /* Change background color on hover */
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
 }
 
-.cart-footer h3{
-  background-color: #7CB342;
+.subtotal {
+  background: radial-gradient(circle, rgba(188, 253, 118, 0.592) 0%, #7CB342 100%);
    
 }
 
 /* Checkout */
+.contact input, .address input, .payment-form input {
+  background-color: rgba(217, 217, 217, 32%);
+  border: solid 1px #7CB342;
+}
+
+.checkout-item {
+  background-color: rgba(255, 255, 255, 75%);
+}
+
+.checkout-prices {
+  background: radial-gradient(circle, rgba(188, 253, 118, 0.592) 0%, #7CB342 100%);
+}
+
+.checkout-btn {
+  background: radial-gradient(circle, rgba(114, 185, 37, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
+}
+
+.checkout-btn:hover {
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
+}
+
+/* Final Page */
+.continue-shopping-btn {
+  background: radial-gradient(circle, rgba(114, 185, 37, 0.65) 0%, #7CB342 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+  border: solid 1px rgba(0, 42, 35, 0.721);
+}
+
+.continue-shopping-btn:hover {
+  background-image: radial-gradient(circle, rgba(124, 179, 66, 0.75), rgba(31, 102, 89, 0.721));
+}
+
+.oval-shape {
+  background-color: rgba(255, 255, 255, 75%);
+}
 
