@@ -7,22 +7,39 @@ caret cursor*/
 
 
 
-
-
-/* Home Page */
+/* Geneal --------------------------------------------------------------------------------------------------------------------------------*/
 .site-title {
     font-family: Georgia;
     font-size: 2vw;
     text-align: center;
+    cursor: pointer;
   }
 
+
+.cart-icon {
+      cursor: pointer;
+}
+
+.search-bar input[type="text"] {
+    color: white;
+    font-size: 1.5rem;
+}
 
 .search-bar input[type="text"]::placeholder {
     font-family:  Georgia;
     font-size: 1.5rem;
-  }
+    color: #fff;
+}
 
-  .footer-links a {
+.search-bar input[type="text"]:focus::placeholder {
+    color: rgba(80, 91, 240, 0.076); 
+}
+
+.search {
+    cursor: pointer;
+}
+
+.footer-links a {
     text-decoration: underline;
     font-size: 2vw;
     color: black;
@@ -31,7 +48,7 @@ caret cursor*/
 
 
 
-/* Home Page */
+/* Home Page --------------------------------------------------------------------------------------------------------------------------------*/
 .buy-now {
     font-size: 2vw;
     cursor: pointer;
@@ -45,16 +62,13 @@ caret cursor*/
     color: #fff;
 }
 
-
 .home-button {
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-style: italic;
     font-family: 'Gill Sans';
-    text-decoration: none; 
     cursor: pointer; 
     color: #fff;
-  }
-
+}
 
 .ingredients-text {
     font-family: Georgia;
@@ -62,12 +76,10 @@ caret cursor*/
     font-style: italic;
 }
 
-
 .who-are-we h1 {
     font-family: 'Courier New';
     font-size: 5vw;
 }
-
 
 .about-us {
     text-align: center;
@@ -82,7 +94,7 @@ caret cursor*/
 
 
 
-/* Products Page */
+/* Products Page --------------------------------------------------------------------------------------------------------------------------------*/
 .dog-products-title {
     color: #fff;
     text-align: center;
@@ -91,29 +103,20 @@ caret cursor*/
     font-style: italic;
 }
 
-.filter p {
+.filter p, .sort a {
     color:#fff;
     font-family: Georgia;
     font-size: 1.4vw;
     text-decoration: underline;
 }
 
-.sort a {
-    color:#fff;
-    font-size: 1.4vw;
-    font-family: Georgia;
-    text-decoration: underline;
+.down-arrow, .product-info {
+    color: #fff;
 }
 
-.sort a .down-arrow {
-    text-decoration: none !important;
+.product-card {
+    cursor: pointer;
 }
-
-
-.product-info {
-    color:#fff;
-  }
-  
 
 .product-info h3 {
     font-size: 1.5vw;
@@ -122,59 +125,60 @@ caret cursor*/
 }
 
 .product-info p {
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: Georgia;
 }
 
 .product-info button {
     font-size: 1.4vw;
     font-family: 'Gill Sans';
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none;
     color: #fff;
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer; 
 }
 
 
-/* Product Page */
-.col-1 h1, h3 {
+/* Product Page --------------------------------------------------------------------------------------------------------------------------------*/
+.product-header a {
+    text-decoration: underline;
+    font-size: 1.5vw;
+    font-family: Georgia;
+    color:#fff;
+}
+
+.product-headers h1 {
     font-size: 3vw;
     color: #fff;
     font-family: Georgia;
 }
 
-.col-1 h3 {
-    font-size: 2vw;
-}
-
-.col-2 h2 {
-    font-size: 2vw;
+.product-headers h3 {
+    font-size: 1.5vw;
     color: #fff;
     font-family: Georgia;
 }
 
-.product-header a {
-    text-decoration: underline;
-    font-size: 2vw;
+.product-headers h2 {
+    font-size: 1.5vw;
+    color: #fff;
     font-family: Georgia;
-    color:#fff;
 }
 
 button {
     font-size: 1.4vw;
     font-family: 'Gill Sans';
-    text-decoration: none; /* Remove default underline */
     color: #fff;
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer; 
   }
 
 .product-details-text h2, .review-titles h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     color:#fff;
     text-decoration: underline;
     font-family: 'Courier New';
 }
 
-.col-2 p, .review-titles h4 {
+.product-details-text p, .review-titles h4 {
     font-size: 2vw;
     color:#fff;
     font-family: 'Gill Sans';
@@ -186,17 +190,25 @@ button {
     font-family: 'Gill Sans';
 }
 
-input[type="text"]::placeholder {
+.review-form input[type="text"] {
+    font-family: Georgia;
+    font-size: 1vw;
+}
+
+.review-form input[type="text"]::placeholder {
     color:rgb(189, 189, 189);
     font-size: 1vw;
     font-family: Georgia;
   }
 
+  .review-form input[type="text"]:focus::placeholder {
+      color: transparent;
+  }
+
 .submit-btn {
     font-size: 1.5rem;
     font-family: 'Gill Sans';
-    text-decoration: none; /* Remove default underline */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer;
 }
 
 .user-reviews h4 {
@@ -210,7 +222,12 @@ input[type="text"]::placeholder {
 }
 
 
-/* Cart Confirm */
+
+/* Cart Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.cross {
+    cursor: pointer;
+}
+
 .confirmation-header h4 {
     font-size: 1vw;
     font-family: 'Gill Sans';
@@ -220,22 +237,21 @@ input[type="text"]::placeholder {
 .confirm-product-details h3 {
     color:#fff;
     font-family: Georgia;
-    font-size: 2vw;
+    font-size: 3vw;
     text-decoration: underline;
 }
 
 .confirm-product-details p {
     color:#fff;
     font-family: Georgia;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .review-cart-btn, .cart-confrim-checkout-btn {
     font-size: 1.5vw;
     color:#fff;
     font-family: 'Gill Sans';
-    text-decoration: none; /* Remove default underline */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer; 
 }
 
 .confirm-product-details a {
@@ -245,8 +261,9 @@ input[type="text"]::placeholder {
     font-size: 1.5vw;
 }
 
-/* Cart Page */
 
+
+/* Cart Page --------------------------------------------------------------------------------------------------------------------------------*/
 .cart-header h3 {
     font-family: Georgia;
     font-size: 4vw;
@@ -270,6 +287,11 @@ input[type="text"]::placeholder {
     font-family: Georgia;
     font-size: 1.5vw;
     color:black;
+    font-style: italic;
+}
+
+.cart-item h1 {
+    font-size: 1.5vw;
 }
 
 .cart-checkout-btn {
@@ -279,7 +301,7 @@ input[type="text"]::placeholder {
     cursor: pointer; 
 }
 
-.subtotal h2, h3 {
+.subtotal h2 {
     font-size: 2vw;
     font-family: 'Gill Sans';
     color:#fff;
@@ -287,7 +309,7 @@ input[type="text"]::placeholder {
 
 
 
-/* Checkout */
+/* Checkout --------------------------------------------------------------------------------------------------------------------------------*/
 .checkout-site-title {
     font-family: Georgia;
     font-size: 4vw;
@@ -300,12 +322,24 @@ input[type="text"]::placeholder {
     font-family: 'Gill Sans';
 }
 
-.contact > :first-child, .address > :first-child {
-    font-size: 2vw;
+.contact input[type="text"], .address input[type="text"], .payment input[type="text"] {
+    font-family: Georgia;
+    font-size: 1vw;
 }
 
-.contact > :nth-child(2), .address > :nth-child(3) {
-    font-size: 1vw;
+.contact input[type="text"]:focus::placeholder, .address input[type="text"]:focus::placeholder, .payment input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+
+.contact > :first-child, .address > :first-child {
+    font-size: 2vw;
+    text-align: left;
+    padding-left: 0;
+}
+
+.contact > :nth-child(3), .address > :nth-child(3) {
+    font-size: 1.25vw;
 }
 
 .contact input::placeholder, .address input::placeholder, .payment-form input::placeholder {
@@ -319,6 +353,8 @@ input[type="text"]::placeholder {
 
 .payment > :first-child {
     font-size: 2vw;
+    text-align: left;
+    padding-left: 0;
 }
 
 .payment > :nth-child(2) {
@@ -354,9 +390,10 @@ input[type="text"]::placeholder {
 .order-summary > :nth-child(4) {
     font-size: 1.5vw;
     text-decoration: underline;
+    cursor: pointer;
 }
 
-.checkout-item {
+.checkout-item p {
     font-family: 'Courier New';
     color: black;
     font-size: 1.5vw;
@@ -375,7 +412,18 @@ input[type="text"]::placeholder {
     font-size: 2vw;
 }
 
-/* Final Page */
+
+
+/* Checkout Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.checkoutconfirm-site-title {
+    padding-top: 1vw;
+    cursor: pointer;
+    font-family: Georgia;
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+}
+
 .final-page-text h2, p{
     color: #fff;
 }
@@ -391,8 +439,266 @@ input[type="text"]::placeholder {
 .continue-shopping-btn {
     font-size: 2vw;
     font-family: 'Gill Sans';
+}
+
+
+
+/* Media Queries --------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 390px) {
+/* Geneal --------------------------------------------------------------------------------------------------------------------------------*/
+.site-title {
+    font-size: 5vw;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-links a {
+    font-size: 3.5vw;
+}
+
+
+/* Home Page --------------------------------------------------------------------------------------------------------------------------------*/
+.buy-now {
+    font-size: 3vw;
+}
+
+.ad-text h3 {
+    font-size: 4vw;
+}
+
+.home-button {
+    font-size: 1rem;
+}
+
+.ingredients-text {
+    font-size: 0.8rem;
+}
+
+.who-are-we h1 {
+    font-size: 8vw;
+}
+
+.about-us p {
+    font-size: 5vw;
+}
+
+
+/* Products Page --------------------------------------------------------------------------------------------------------------------------------*/
+.filter p {
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+.sort a {
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+.product-info h3 {
+    font-size: 2.5vw;
+}
+
+.product-info p {
+    font-size: 2vw;
+}
+
+.product-info button {
+    font-size: 3vw;
+}
+
+
+/* Product Page --------------------------------------------------------------------------------------------------------------------------------*/
+.product-header a {
+    text-decoration: none;
+}
+
+.product-headers h1 {
+    font-size: 6vw;
+}
+
+.product-headers h3 {
+    font-size: 3vw;
+    padding-top: 3vw;
+    padding-left: 0.5vw;
+}
+
+.product-headers h2 {
+    font-size: 3vw;
+}
+
+button {
+    font-size: 3vw;
+}
+
+.product-details-text h2, .user-reviews h2 {
+    font-size: 6vw;
+}
+
+.user-reviews h2 {
+    color: white;
+}
+
+.product-details-text p, .review-titles h4 {
+    font-size: 5.5vw;
+}
+
+.empty-stars p {
+    font-size: 5vw;
+}
+
+input[type="text"]::placeholder {
+    font-size: 4vw;
+    color: rgba(0, 0, 0, 0.671);
+  }
+
+
+.submit-btn {
+    font-size: 5vw;
+}
+
+.user-reviews h4 {
+    font-size: 5vw;
+}
+
+.user-reviews p {
+    font-size: 5vw;
+}
+
+
+/* Cart Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.confirmation-header h4 {
+    font-size: 3vw;
+}
+
+.confirm-product-details h3 {
+    font-size: 5vw;
+}
+
+.confirm-product-details p {
+    font-size: 4vw;
+}
+
+.review-cart-btn, .cart-confrim-checkout-btn {
+    font-size: 4vw;
+}
+
+.confirm-product-details a {
+    font-size: 3.5vw;
+}
+
+
+/* Cart --------------------------------------------------------------------------------------------------------------------------------*/
+.cart-header p {
+    text-decoration: none;
+}
+
+.cart-titles {
+    font-size: 2.5vw;
+}
+
+.cart-item h1 {
+    font-size: 4vw;
+}
+
+.cart-items p, h2 {
+    font-size: 2.5vw;
+}
+
+.cart-checkout-btn {
+    font-size: 5vw;
+}
+
+.subtotal h2 {
+    font-size: 3vw;
+}
+
+
+/* Checkout --------------------------------------------------------------------------------------------------------------------------------*/
+.checkout-site-title {
+    font-size: 5vw;
+}
+
+.contact > :first-child, .address > :first-child {
+    font-size: 5vw;
+}
+
+.contact > :nth-child(2), .address > :nth-child(2) {
+    font-size: 5vw;
+}
+
+.contact > :nth-child(3), .address > :nth-child(3) {
+    font-size: 3vw;
+}
+
+.contact input::placeholder, .address input::placeholder, .payment-form input::placeholder {
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.payment > :first-child {
+    font-size: 5vw;
+}
+
+.payment > :nth-child(2) {
+    font-size: 3vw;
+}
+
+.payment > :nth-child(4), .payment > :nth-child(5) {
+    font-size: 3vw;
+}
+
+.payment > :nth-child(6) {
+    font-size: 3vw;
+}
+
+.order-summary > :first-child {
+    font-size: 4vw;
+    color: black;
+}
+
+.order-summary > :nth-child(2) {
+    font-size: 3vw;
+    color: black;
+}
+
+.checkout-prices h2 { 
+    font-size: 5vw;
+}
+
+.total h2 {
+    font-size: 6vw;
+}
+
+.checkout-btn {
+    font-size: 8vw;
+    color: black;
+}
+
+
+/* Checkout Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.checkoutconfirm-site-title {
+    padding-top: 3vw;
+    font-size: 5vw;
+}
+
+.final-page-text h2 {
+    font-size: 8vw;
+}
+
+.final-page-text p {
+    font-size: 5vw;
+}
+
+.continue-shopping-btn {
+    font-size: 5vw;
+}
+
+
 
 }
+
 
 
 
