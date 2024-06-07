@@ -13,49 +13,48 @@
 
 
 <body>
-    <div class="background-color-product">
+    <!-- container for background color -->
+    <div class="background-color-products">
+
         <header>
-            <div class="header-container">
-    
+            <div class="header-container">  <!-- Seperating from the search bar for later pages -->
+                <img src="/Assets/Hamburger.png" alt="Menu" class="menu-icon"> <!-- Icon Image -->
                 
-                <img src="/Assets/Hamburger.png" alt="Menu" class="menu-icon">
-                
+                <div class="site-title"><h1>A La Carte</h1></div>
     
-                <div class="site-title">
-                    <h1>A La Carte</h1>
+                <!-- user and cart icon container -->
+                <div class="user-cart">
+                    <img src="/Assets/AccountIcon.png" alt="User"> <!-- Icon Image -->
+                    <img src="/Assets/cart.png" alt="Cart" class="cart-icon"> <!-- Icon Image -->
+                    <div class="cart-count">0</div>
                 </div>
-    
-                <div class="user">
-                    <img src="/Assets/AccountIcon.png" alt="User">
-                </div>
-    
-                
-    
             </div>
     
-                <div class="search-bar">
-                    <input type="text" placeholder="Search products..." name="search" class="input">
-                    <img src="/Assets/SearchIcon.png" alt="Search"></img>
-                </div>
+            <!-- Search bar container. class for css, id for javascript-->
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." name="search" class="input" id="input">
+                <img src="/Assets/SearchIcon.png" alt="Search" class="search"></img> <!-- Icon Image -->
+            </div>
         </header>
 
 
-    <main>
+<main>
 
     <nav>
+        <!-- Arrow -->
         <div class="product-header">
-
-            <img src="/Assets/LeftArrow.png" alt="Left" class="left-arrow"> 
+            <img src="/Assets/LeftArrow.png" alt="Left" class="left-arrow-cart"> <!-- Icon Image -->
             <a href="dogproducts.html">Continue Shopping</a>
-
         </div>
     </nav>
 
+    <!-- Ttile and and empty cart container-->
     <div class="cart-header">
         <h3>Cart</h3>
-        <p>Edit Cart</p>
+        <button id="reset-cart" class="empty-cart">Empty Cart</button>
     </div>
 
+    <!-- Cart headings container-->
     <div class="cart-titles">
         <p>Item</p>
         <p>Unit Price</p>
@@ -63,38 +62,25 @@
         <p>Price</p>
     </div>
 
-    <section class="cart-items">
-
-        <article class="cart-item">
-            <img src="/Assets/Dog1.png" alt="Chicken & Rice" class="cart-product">
-            <h2>Chicken & Rice</h2>
-            <p>$39.95</p>
-            <span class="quantity">
-                <img src="/Assets/Minus.png" alt="Minus" class="minus">
-                <p>1</p>
-                <img src="/Assets/Plus.png" alt="Plus" class="plus">
-            </span>
-            <p>$39.95</p>
-        </article>
-
+    <!-- HTML cart item created with javascript-->
+    <section class="cart-items" id="cartItems">
     </section>
 
+    <!-- Subtotal and checkout button container -->
     <section class="cart-footer">
+        <!-- Subtotal container and JS metadata for the price -->
         <span class="subtotal">
-            <h2>Subtotal:</h3>
-            <h3>$39.95</h3>
+            <h2>Subtotal:</h2>
+            <h2 id="subtotalAmount">$00.00</h2>
         </span>
-
-        <button class="cart-checkout-btn">CHECKOUT</button>
-
+        <!-- Checkout button -->
+        <button class="cart-checkout-btn" id="cart-checkout-btn">CHECKOUT</button>
     </section>
     
-
-
-
-    </main>
+</main>
     </div>
    
+<script src="main.js" defer></script>
 
 </body>
 </html>
