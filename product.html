@@ -13,161 +13,180 @@
 
 
 <body>
+
+    <!-- container for background color -->
     <div class="background-color-product">
-        <header>
-            <div class="header-container">
-    
-                
-                <img src="/Assets/Hamburger.png" alt="Menu" class="menu-icon">
-                
-    
-                <div class="site-title">
-                    <h1>A La Carte</h1>
-                </div>
-    
-                <div class="user">
-                    <img src="/Assets/AccountIcon.png" alt="User">
-                </div>
-    
-                
-    
+
+    <header>
+        <div class="header-container">  <!-- Seperating from the search bar for later pages -->
+            <img src="/Assets/Hamburger.png" alt="Menu" class="menu-icon"> <!-- Icon Image -->
+            
+            <div class="site-title"><h1>A La Carte</h1></div>
+
+            <!-- user and cart icon container -->
+            <div class="user-cart">
+                <img src="/Assets/AccountIcon.png" alt="User"> <!-- Icon Image -->
+                <img src="/Assets/cart.png" alt="Cart" class="cart-icon"> <!-- Icon Image -->
+                <div class="cart-count">0</div>
             </div>
-    
-                <div class="search-bar">
-                    <input type="text" placeholder="Search products..." name="search" class="input">
-                    <img src="/Assets/SearchIcon.png" alt="Search"></img>
-                </div>
-        </header>
+        </div>
+
+        <!-- Search bar container. class for css, id for javascript-->
+        <div class="search-bar">
+            <input type="text" placeholder="Search products..." name="search" class="input" id="input">
+            <img src="/Assets/SearchIcon.png" alt="Search" class="search"></img> <!-- Icon Image -->
+        </div>
+    </header>
 
 
-    <main>
+<main>
 
     <nav>
+        <!-- Container keeping image and text in the same row -->
         <div class="product-header">
-
-            <img src="/Assets/LeftArrow.png" alt="Left" class="left-arrow"> 
-            <a href="dogproducts.html">Back to Products</a>
-
+            <img src="/Assets/LeftArrow.png" alt="Left" class="left-arrow-product"> <!-- Icon Image -->
+            <a href="dogproducts.html">Bark</a> <!-- Pet pun -->
         </div>
     </nav>
- 
-    <div class="main-container">
-        <div class="col-1">
 
-            <h1>Chicken & Rice</h1>
-            <h3>Medium to Large Breeds</h3>
-            <div class="product-images">
-                <img src="/Assets/Dog1.png" alt="Chicken & Rice" class="img-main">
-                <span class="product-images-small">
-                    <img src="/Assets/Dog1.png" alt="Chicken & Rice" class="img1">
-                    <img src="/Assets/FoodCloseup.png" alt="Food Closeup" class="img2">
-                    <img src="Assets/FoodInfo.png" alt="Food Info" class="img3">
+    <!-- Container for title, breed, price and button. Using metadata for JS -->
+    <div class="product-headers">
+        <span class="name-price">
+            <h1 id="productName">Product Name</h1>
+            <h2 id="productPrice">Product Price</h2>
+        </span>
+
+        <span class="name-price">
+            <h3 id="productDesc">Product Description</h3>
+            <button id="add-to-cart">Add To Cart</button>
+        </span>
+    </div>
+
+    <!-- Container for the images and product description -->
+    <div class="images-text">
+        <!-- Container for the main image and smaller images -->
+        <div class="product-images">
+            <img id="productImage" class="img-main" src=""> <!-- Javascript -->
+            <span class="product-images-small">
+                <img src="/Assets/Dog1.png" alt="Chicken & Rice" class="img1">
+                <img src="/Assets/FoodCloseup.png" alt="Food Closeup" class="img2">
+                <img src="Assets/FoodInfo.png" alt="Food Info" class="img3">
+            </span>
+        </div>
+
+        <!-- Product description container -->
+        <div class="product-details-text">
+            <h2>Active adult breeds</h2> <!-- Heading -->
+            <!-- Informational points, line breaking -->
+            <p>
+                <span class="line">- For all large breeds older than 12 months.</span>
+                <span class="line">- Rich in real chicken and human-grade rice, fortified with probiotic culture.</span>
+                <span class="line">- Contains no artificial colours or flavours to ensure a healthier lifestyle.</span>
+                <span class="line">- Formulated blend of essential fatty acids to make sure your dog's skin coat stays healthy and glossy.</span>
+        
+            </p>
+        </div>
+    </div>
+
+    <!-- Container for write-review section and user-reviews section -->
+    <div class="reviews">
+        <!-- Write review container -->
+        <article class="write-review">
+            <div class="review-titles">
+                <h4>Try reviewing your pet's food...</h4>
+            </div>
+
+            <!-- Star rating container -->
+            <div class="empty-stars">
+                <p>Your rating: </p>
+                <img src="/Assets/EmptyStar.png">
+                <img src="/Assets/EmptyStar.png">
+                <img src="/Assets/EmptyStar.png">
+                <img src="/Assets/EmptyStar.png">
+                <img src="/Assets/EmptyStar.png">
+            </div>
+
+            <!-- Review form container -->
+            <div class="review-form">
+                <!-- Span to keep the two names form in the same row -->
+                <span class="names">
+                    <input type="text" placeholder="First name" name="first-name">
+                    <input type="text" placeholder="Last name" name="first-name">
+                </span>
+
+                <span class="pet-name">
+                    <input type="text" placeholder="Your pets name" name="pet-name">
+                </span>
+
+                <span class="review-box">
+                    <input type="text" placeholder="Write your review..." name="first-name">
                 </span>
             </div>
 
-            <article class="write-review">
-                <div class="review-titles">
-                    <h2>Reviews</h2>
-                    <h4>Write a review!</h4>
+            <button type="submit" class="submit-btn">Submit :)</button>
+        </article>
+
+        <!-- User reviews container -->
+        <aside class="user-reviews">
+
+            <!-- Mark Review-->
+            <div class="mark-review">
+                <img src="/Assets/Mark.png" alt="Mark Profile" class="mark-profile">
+                <h4>Mark O'Conner</h4>
+                <!-- Filled stars container -->
+                <div class="filled-stars">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
                 </div>
-
-                <div class="empty-stars">
-                    <p>Your rating: </p>
-                    <img src="/Assets/EmptyStar.png">
-                    <img src="/Assets/EmptyStar.png">
-                    <img src="/Assets/EmptyStar.png">
-                    <img src="/Assets/EmptyStar.png">
-                    <img src="/Assets/EmptyStar.png">
-                </div>
-
-
-                <div class="review-form">
-                    <span class="names">
-                        <input type="text" placeholder="First name" name="first-name">
-                        <input type="text" placeholder="Last name" name="first-name">
-                    </span>
-
-                    <span class="review-box">
-                        <input type="text" placeholder="Write your review..." name="first-name">
-                    </span>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit</button>
-            </article>
-
-        </div>
-
-        <div class="col-2">
-            <span class="button-price">
-                <button>Add To Cart</button>
-                <h2>$39.99</h2>
-            </span>
-
-            <div class="product-details-text">
-                <h2>Active adult breeds</h2>
-                <p>Recommended for all large breeds older than 12 months.
-                Rich in real chicken and human-grade rice, fortified with probiotic culture, glucosamine and chondroitin. It contains no artificial colours or flavours to ensure a healthier lifestyle. Additionally it also contains carefully formulated blend of essential fatty acids to make sure your dogs skin coat stays healthy and glossy.</p>
+                <p>Great value for money while giving my dogs a gourmet meal with fresh ingredients!</p>
             </div>
 
-            <aside class="user-reviews">
-
-                <div class="mark-review">
-                    <img src="/Assets/Mark.png" alt="Mark Profile" class="mark-profile">
-                    <h4>Mark O'Conner</h4>
-                    <div class="filled-stars">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                    </div>
-                    <p>Great value for money while giving my dogs a gourmet meal with fresh ingredients!</p>
+            <!-- Sarah Review-->
+            <div class="sarah-review">
+                <img src="/Assets/Sarah.png" alt="Sarah Profile" class="sarah-profile">
+                <h4>Sarah Dion</h4>
+                <!-- Filled stars container -->
+                <div class="filled-stars">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
+                    <img src="/Assets/FilledStar.png">
                 </div>
-
-                <div class="sarah-review">
-                    <img src="/Assets/Sarah.png" alt="Sarah Profile" class="sarah-profile">
-                    <h4>Sarah Dion</h4>
-                    <div class="filled-stars">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                        <img src="/Assets/FilledStar.png">
-                    </div>
-                    <p>I love how similar the meals are to the ones I’m cooking for myself.</p>
-                </div>
-
-            </aside>
-
-        </div>
+                <p>I love how similar the meals are to the ones I’m cooking for myself.</p>
+            </div>
+        </aside>
     </div>
     
 
 
-    </main>
+</main>
    
     </div>
-    <footer>
-        <div class="footer-container">
-
-            <div class="footer-links">
-                <a href="/history">History</a>
-                <a href="/about-us">About Us</a>
-                <a href="/contact">Contact</a>
-                <a href="/products">Products</a>
-            </div>
-
-            <div class="footer-icons">
-                <img src="/Assets/X.png" alt="X">
-                <img src="/Assets/Insta.png" alt="Instagram">   
-                <img src="/Assets/Facebook.png" alt="Facebook">
-                <img src="/Assets/Gmail.png" alt="Gmail">
-            </div>
-
+<footer>
+    <!-- Footer Container -->
+    <div class="footer-container">
+        <div class="footer-links">
+            <a>History</a>
+            <a>About Us</a>
+            <a>Contact</a>
+            <a>Products</a>
         </div>
-    </footer>
+
+        <!-- Social Applications -->
+        <div class="footer-icons">
+            <img src="/Assets/X.png" alt="X">
+            <img src="/Assets/Insta.png" alt="Instagram">   
+            <img src="/Assets/Facebook.png" alt="Facebook">
+            <img src="/Assets/Gmail.png" alt="Gmail">
+        </div>
+    </div>
+</footer>
 
 
-
+<script src="main.js" defer></script>
 </body>
 </html>
