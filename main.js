@@ -159,9 +159,9 @@ function addCartItem(product) {
         <h1>${product.name}</h1>
         <p>${product.price}</p>
         <span class="quantity">
-            <img src="/Assets/Minus.png" alt="Minus" class="minus">
+            <img src="Assets/Minus.png" alt="Minus" class="minus">
             <p id="quantityCount">${product.quantity}</p>
-            <img src="/Assets/Plus.png" alt="Plus" class="plus">
+            <img src="Assets/Plus.png" alt="Plus" class="plus">
         </span>
         <p>${product.price}</p>
     `;
