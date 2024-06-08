@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Gordon">
+    <title>Dog Products</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colour.css">
+    <link rel="stylesheet" href="typography.css">
+</head>
+
+
+
+<body>
+
+    <!-- container for background color -->
+    <div class="background-color-products">
+
+    <header>
+        <div class="header-container">  <!-- Seperating from the search bar for later pages -->
+            <img src="Assets/Hamburger.png" alt="Menu" class="menu-icon"> <!-- Icon Image -->
+            
+            <div class="site-title"><h1>A La Carte</h1></div>
+
+            <!-- user and cart icon container -->
+            <div class="user-cart">
+                <img src="Assets/AccountIcon.png" alt="User"> <!-- Icon Image -->
+                <img src="Assets/cart.png" alt="Cart" class="cart-icon"> <!-- Icon Image -->
+                <div class="cart-count">0</div>
+            </div>
+        </div>
+
+        <!-- Search bar container. class for css, id for javascript-->
+        <div class="search-bar">
+            <input type="text" placeholder="Search products..." name="search" class="input" id="input">
+            <img src="Assets/SearchIcon.png" alt="Search" class="search"></img> <!-- Icon Image -->
+        </div>
+    </header>
+
+
+<main>
+
+    <nav>
+        <!-- Containing for all the heading elements on the page-->
+        <div class="products-header"> 
+            <div class="left-arrow"> 
+                <img src="Assets/LeftArrow.png" alt="Left"> <!-- Icon Image -->
+            </div>
+
+            <div class="dog-products-title"><h1>DOG PRODUCTS</h1></div>
+
+            <!-- Container to position elements in the same row -->
+            <div class="filter-sort">
+                <div class="filter">
+                    <p>Filter</p>
+                    <img src="Assets/Hamburger.png" alt="Filter"> <!-- Icon Image -->
+                </div>
+
+                <div class="sort">
+                    <a>Sort</a>
+                    <span class="down-arrow">&#x25BC;</span> <!-- CSS down arrow code-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Container for all product cards -->
+    <section class="products">
+
+        <!-- Container for individual product card -->
+        <article class="product-card">
+            <img src="Assets/Dog1.png" alt="Chicken & Rice" class="product-image"> <!-- A La Carte Image -->
+
+            <div class="product-info">
+                <h3>Chicken & Rice</h3>
+                <p>Medium to Large Breeds</p>
+                <p>$39.95</p>
+                <button class="view-product" onclick="viewProduct(this)">View Product</button> <!-- Button with JS functionality to gather product data-->
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog3.png" alt="Lamb & Rice" class="product-image">
+
+            <div class="product-info">
+                <h3>Lamb & Rice</h3>
+                <p>All life stages</p>
+                <p>$39.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog5.png" alt="Kangaroo & Rice" class="product-image">
+
+            <div class="product-info">
+                <h3>Kangaroo & Rice</h3>
+                <p>All life stages</p>
+                <p>$39.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog6.png" alt="Salmon & Potato" class="product-image">
+
+            <div class="product-info">
+                <h3>Salmon & Potato</h3>
+                <p>Low Grain</p>
+                <p>$44.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog4.png" alt="Lamb & Rice Box" class="product-image-small">
+
+            <div class="product-info">
+                <h3>Lamb & Rice (Box)</h3>
+                <p>All life stages</p>
+                <p>$169.50</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog8.png" alt="Salmon & Vegetables" class="product-image">
+
+            <div class="product-info">
+                <h3>Salmon & Vegetables</h3>
+                <p>Small to Medium Breeds</p>
+                <p>$48.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog7.png" alt="Chicken & Seaweed" class="product-image">
+
+            <div class="product-info">
+                <h3>Chicken & Seaweed</h3>
+                <p>Medium to Large Breeds</p>
+                <p>$48.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+
+
+        <article class="product-card">
+            <img src="Assets/Dog2.png" alt="Chicken & Rice Box" class="product-image-small">
+
+            <div class="product-info">
+                <h3>Chicken & Rice (Box)</h3>
+                <p>Medium to Large Breeds</p>
+                <p>$149.50</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog6.png" alt="Salmon & Potato" class="product-image">
+
+            <div class="product-info">
+                <h3>Salmon & Potato</h3>
+                <p>Low Grain</p>
+                <p>$44.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog7.png" alt="Chicken & Seaweed" class="product-image">
+
+            <div class="product-info">
+                <h3>Chicken & Seaweed</h3>
+                <p>Medium to Large Breeds</p>
+                <p>$48.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog8.png" alt="Salmon & Vegetables" class="product-image">
+
+            <div class="product-info">
+                <h3>Salmon & Vegetables</h3>
+                <p>Small to Medium Breeds</p>
+                <p>$48.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Assets/Dog5.png" alt="Kangaroo & Rice" class="product-image">
+
+            <div class="product-info">
+                <h3>Kangaroo & Rice</h3>
+                <p>All life stages</p>
+                <p>$39.95</p>
+                <button onclick="viewProduct(this)">View Product</button>
+            </div>
+        </article>
+
+    </section>
+
+
+
+</main>
+    </div>
+   
+
+<footer>
+    <!-- Footer Container -->
+    <div class="footer-container">
+        <div class="footer-links">
+            <a>History</a>
+            <a>About Us</a>
+            <a>Contact</a>
+            <a>Products</a>
+        </div>
+
+        <!-- Social Applications -->
+        <div class="footer-icons">
+            <img src="Assets/X.png" alt="X">
+            <img src="Assets/Insta.png" alt="Instagram">   
+            <img src="Assets/Facebook.png" alt="Facebook">
+            <img src="Assets/Gmail.png" alt="Gmail">
+        </div>
+    </div>
+</footer>
+
+
+<script src="main.js" defer></script>
+</body>
+</html>

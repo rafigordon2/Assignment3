@@ -1,0 +1,755 @@
+/* Imported font for most text excluding buttons and titles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+/* Geneal --------------------------------------------------------------------------------------------------------------------------------*/
+.site-title {
+    font-family: Georgia;
+    font-size: 2vw; /* Using view width to create responsive font sizes */
+    font-style: italic;
+    text-align: center;
+    cursor: pointer; /* Pointer cursor indicating clickability */
+  }
+
+.cart-icon {
+      cursor: pointer;
+}
+
+.search-bar input[type="text"] {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "DM Serif Text", serif;
+}
+
+.search-bar input[type="text"]::placeholder {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.search-bar input[type="text"]:focus::placeholder {
+    color: rgba(80, 91, 240, 0.076); 
+}
+
+.search {
+    cursor: pointer;
+}
+
+.footer-links a {
+    text-decoration: underline;
+    font-size: 2vw;
+    color: black;
+    font-family:'Gill Sans';
+}
+
+
+
+/* Home Page --------------------------------------------------------------------------------------------------------------------------------*/
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+.buy-now {
+    font-size: 2vw;
+    cursor: pointer;
+    font-family:'Gill Sans';
+}
+
+.ad-text h3 {
+    font-size: 3.5vw;
+    font-family:'Gill Sans';
+    font-style: italic;
+    color: #fff;
+}
+
+.home-button {
+    font-size: 2vw;
+    font-style: italic;
+    font-family: 'Gill Sans';
+    cursor: pointer; 
+    color: #fff;
+}
+
+.ingredients-text {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+.who-are-we h1 {
+    font-family: 'Courier New';
+    font-size: 5vw;
+}
+
+.about-us {
+    text-align: center;
+    font-family: 'Courier New';
+    font-style: italic;
+    color: white;
+}
+
+.about-us p {
+    font-size: 2vw;
+}
+
+
+
+/* Products Page --------------------------------------------------------------------------------------------------------------------------------*/
+.dog-products-title {
+    color: #fff;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Gill Sans';
+    font-style: italic;
+}
+
+.filter p, .sort a {
+    color:#fff;
+    font-family: 'Courier New';
+    font-size: 1.4vw;
+    text-decoration: underline;
+}
+
+.down-arrow, .product-info {
+    color: #fff;
+}
+
+.product-card {
+    cursor: pointer;
+}
+
+.product-info h3 {
+    font-size: 2vw;
+    font-family: "DM Serif Text", serif;
+    text-decoration: underline;
+}
+
+.product-info p {
+    font-size: 1.5vw;
+    font-family: "DM Serif Text", serif;
+}
+
+.product-info button {
+    font-size: 2vw;
+    font-family: 'Gill Sans';
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer; 
+}
+
+
+/* Product Page --------------------------------------------------------------------------------------------------------------------------------*/
+.product-header a {
+    text-decoration: underline;
+    font-size: 1.5vw;
+    font-family: 'Courier New';
+    color:#fff;
+}
+
+.product-headers h1 {
+    font-size: 4vw;
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.product-headers h3 {
+    font-size: 2vw;
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.product-headers h2 {
+    font-size: 2vw;
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+}
+
+button {
+    font-size: 2vw;
+    font-family: 'Gill Sans';
+    color: #fff;
+    cursor: pointer; 
+  }
+
+.product-details-text h2, .review-titles h2 {
+    font-size: 2vw;
+    color:#fff;
+    text-decoration: underline;
+    font-family: "DM Serif Text", serif;
+}
+
+.product-details-text h2 {
+    font-size: 2.5vw;
+}
+
+.review-titles h4 {
+    text-decoration: underline;
+    color:#fff;
+    font-family: "DM Serif Text", serif;
+    font-size: 2.5vw;
+}
+
+.product-details-text p {
+    font-size: 2vw;
+    color:#fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.empty-stars p {
+    font-size: 2vw;
+    color:#fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.review-form input[type="text"] {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.25vw;
+}
+
+.review-form input[type="text"]::placeholder {
+    color:rgb(189, 189, 189);
+    font-size: 1.25vw;
+    font-family: "DM Serif Text", serif;
+  }
+
+.review-form input[type="text"]:focus::placeholder {
+      color: transparent;
+  }
+
+.submit-btn {
+    font-size: 2vw;
+    font-family: 'Gill Sans';
+    cursor: pointer;
+}
+
+.user-reviews h4 {
+    font-size: 1.5vw;
+    color:#fff;
+}
+
+.user-reviews p {
+    font-size: 1.5vw;
+    color:#fff;
+}
+
+
+
+/* Cart Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.cross {
+    cursor: pointer;
+}
+
+.confirmation-header h4 {
+    font-size: 1.5vw;
+    font-family: 'Gill Sans';
+    color:#fff;
+}
+
+.confirm-product-details h3 {
+    color:#fff;
+    font-family: "DM Serif Text", serif;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+.confirm-product-details p {
+    color:#fff;
+    font-family: "DM Serif Text", serif;
+    font-size: 2vw;
+}
+
+.review-cart-btn, .cart-confrim-checkout-btn {
+    font-size: 2vw;
+    color:#fff;
+    font-family: 'Gill Sans';
+    cursor: pointer; 
+}
+
+.confirm-product-details a {
+    color:#fff;
+    font-family: "DM Serif Text", serif;
+    text-decoration: underline;
+    font-size: 1.5vw;
+}
+
+
+
+/* Cart Page --------------------------------------------------------------------------------------------------------------------------------*/
+.cart-header h3 {
+    font-family: "DM Serif Text", serif;
+    font-size: 4vw;
+    color:#fff;
+}
+
+.cart-header p {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.5vw;
+    color:#fff;
+    text-decoration: underline;
+}
+
+.cart-titles {
+    font-family: 'Courier New';
+    font-size: 1.5vw;
+    color:#fff;
+}
+
+.cart-items p, h2 {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.5vw;
+    color:black;
+
+}
+
+.cart-item h1 {
+    font-size: 2vw;
+    font-style: italic;
+    font-family: "DM Serif Text", serif;
+}
+
+.subtotal h2 {
+    font-size: 2vw;
+    font-family: 'Gill Sans';
+    color:#fff;
+}
+
+.cart-checkout-btn {
+    font-size: 3vw;
+    color:rgb(255, 255, 255);
+    font-family: 'Gill Sans';
+    cursor: pointer; 
+}
+
+
+
+/* Checkout --------------------------------------------------------------------------------------------------------------------------------*/
+.checkout-site-title {
+    padding-top: 0.5vw;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+}
+
+.contact, .address {
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.contact input[type="text"], .address input[type="text"], .payment input[type="text"] {
+    font-family: "DM Serif Text", serif;
+    font-size: 1.75vw;
+}
+
+.contact input[type="text"]:focus::placeholder, .address input[type="text"]:focus::placeholder, .payment input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+.contact > :first-child, .address > :first-child {
+    font-size: 2.5vw;
+    text-align: left;
+    padding-left: 0;
+}
+
+.contact > :nth-child(3), .address > :nth-child(3) {
+    font-size: 1.5vw;
+}
+
+.contact input::placeholder, .address input::placeholder, .payment-form input::placeholder {
+    color: rgb(186, 185, 185);
+    font-family: "DM Serif Text", serif;
+}
+
+.payment {
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.payment > :first-child {
+    font-size: 2.5vw;
+    text-align: left;
+    padding-left: 0;
+}
+
+.payment > :nth-child(2) {
+    font-size: 1.5vw;
+}
+
+.payment > :nth-child(4), .payment > :nth-child(5) {
+    font-size: 1.5vw;
+}
+
+.payment > :nth-child(5) {
+    font-size: 1.5vw;
+}
+
+.payment > :nth-child(6) {
+    font-size: 1.5vw;
+}
+
+.order-summary {
+    color: #fff;
+}
+
+.order-summary > :first-child {
+    font-size: 2.5vw;
+    font-family: "DM Serif Text", serif;
+}
+
+.order-summary > :nth-child(2) {
+    font-size: 1.5vw;
+    text-decoration: underline;
+    font-family: 'Courier New';
+}
+
+.order-summary > :nth-child(4) {
+    font-size: 1.5vw;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Courier New';
+}
+
+.checkout-item p {
+    font-family: 'Courier New';
+    color: black;
+    font-size: 1.5vw;
+    font-family: "DM Serif Text", serif;
+    font-weight: 0;
+}
+
+.checkout-prices h2 { 
+    color: #fff;
+    font-size: 1.5vw;
+    font-family: "DM Serif Text", serif;
+}
+
+.total h2 {
+    font-size: 2.5vw;
+}
+
+.checkout-btn {
+    font-size: 2.5vw;
+    font-family: 'Gill Sans';
+}
+
+
+
+/* Checkout Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.checkoutconfirm-site-title {
+    padding-top: 1vw;
+    cursor: pointer;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+}
+
+.final-page-text h2, p{
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+}
+
+.final-page-text h2 {
+    font-size: 2vw;
+}
+
+.final-page-text p {
+    font-size: 1.5vw;
+}
+
+.continue-shopping-btn {
+    font-size: 2vw;
+    font-family: 'Gill Sans';
+}
+
+
+
+/* Media Queries --------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 390px) {
+/* Geneal --------------------------------------------------------------------------------------------------------------------------------*/
+.site-title {
+    font-size: 5vw;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-links a {
+    font-size: 3.5vw;
+}
+
+
+/* Home Page --------------------------------------------------------------------------------------------------------------------------------*/
+.buy-now {
+    font-size: 3vw;
+}
+
+.ad-text h3 {
+    font-size: 4vw;
+}
+
+.home-button {
+    font-size: 5vw;
+}
+
+.ingredients-text {
+    font-size: 4vw;
+}
+
+.who-are-we h1 {
+    font-size: 8vw;
+}
+
+.about-us p {
+    font-size: 5.25vw;
+}
+
+
+/* Products Page --------------------------------------------------------------------------------------------------------------------------------*/
+.dog-products-title {
+    font-size: 5vw;
+}
+
+.filter p {
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+.sort a {
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+.product-info h3 {
+    font-size: 4vw;
+}
+
+.product-info p {
+    font-size: 3vw;
+}
+
+.product-info button {
+    font-size: 5vw;
+}
+
+
+/* Product Page --------------------------------------------------------------------------------------------------------------------------------*/
+.product-header a {
+    text-decoration: none;
+}
+
+.product-headers h1 {
+    font-size: 8vw;
+}
+
+.product-headers h3 {
+    font-size: 4vw;
+    padding-top: 3vw;
+    padding-left: 0.5vw;
+}
+
+.product-headers h2 {
+    font-size: 4vw;
+    margin-top: 1.5vw;
+}
+
+button {
+    font-size: 4vw;
+}
+
+.product-details-text h2, .user-reviews h2 {
+    font-size: 6vw;
+}
+
+.product-details-text p {
+    font-size: 4.75vw;
+}
+
+.user-reviews h2 {
+    color: white;
+}
+
+.review-titles h4 {
+    font-size: 5.5vw;
+}
+
+.empty-stars p {
+    font-size: 5vw;
+}
+
+.review-form input[type="text"]::placeholder {
+    font-size: 4vw;
+    color: rgba(0, 0, 0, 0.671);
+  }
+
+  .review-form input[type="text"] {
+    font-size: 4vw;
+    color: rgba(0, 0, 0, 0.671);
+  }
+
+
+.submit-btn {
+    font-size: 5vw;
+}
+
+.user-reviews h4 {
+    font-size: 5vw;
+}
+
+.user-reviews p {
+    font-size: 4vw;
+}
+
+
+/* Cart Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.confirmation-header h4 {
+    font-size: 3vw;
+}
+
+.confirm-product-details h3 {
+    font-size: 6vw;
+}
+
+.confirm-product-details p {
+    font-size: 5vw;
+}
+
+.review-cart-btn, .cart-confrim-checkout-btn {
+    font-size: 5vw;
+}
+
+.confirm-product-details a {
+    font-size: 3.5vw;
+}
+
+
+/* Cart --------------------------------------------------------------------------------------------------------------------------------*/
+.cart-header p {
+    text-decoration: none;
+}
+
+.cart-titles {
+    font-size: 3vw;
+}
+
+.cart-item h1 {
+    font-size: 4vw;
+}
+
+.cart-items p, h2 {
+    font-size: 2.5vw;
+}
+
+.cart-checkout-btn {
+    font-size: 7vw;
+}
+
+.subtotal h2 {
+    font-size: 5vw;
+}
+
+
+/* Checkout --------------------------------------------------------------------------------------------------------------------------------*/
+.checkout-site-title {
+    font-size: 5vw;
+}
+
+.contact input[type="text"], .address input[type="text"], .payment input[type="text"] {
+    font-size: 3vw;
+}
+
+.contact > :first-child, .address > :first-child {
+    font-size: 5vw;
+}
+
+.contact > :nth-child(2), .address > :nth-child(2) {
+    font-size: 5vw;
+}
+
+.contact > :nth-child(3), .address > :nth-child(3) {
+    font-size: 3vw;
+}
+
+.contact input::placeholder, .address input::placeholder, .payment-form input::placeholder {
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.payment > :first-child {
+    font-size: 5vw;
+}
+
+.payment > :nth-child(2) {
+    font-size: 4vw;
+}
+
+.payment > :nth-child(4), .payment > :nth-child(5) {
+    font-size: 4vw;
+}
+
+.payment > :nth-child(6) {
+    font-size: 4vw;
+}
+
+.order-summary > :first-child {
+    font-size: 4vw;
+    color: black;
+}
+
+.order-summary > :nth-child(2) {
+    font-size: 2.5vw;
+    color: black;
+}
+
+.checkout-prices h2 { 
+    font-size: 5vw;
+}
+
+.total h2 {
+    font-size: 6vw;
+}
+
+.checkout-btn {
+    font-size: 8vw;
+    color: black;
+}
+
+
+/* Checkout Confirm --------------------------------------------------------------------------------------------------------------------------------*/
+.checkoutconfirm-site-title {
+    padding-top: 3vw;
+    font-size: 8vw;
+}
+
+.final-page-text h2 {
+    font-size: 8vw;
+}
+
+.final-page-text p {
+    font-size: 6vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.continue-shopping-btn {
+    font-size: 5vw;
+}
+
+
+
+}
+
+
+
+
+
+
