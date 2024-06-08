@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Gordon">
+    <title>Home</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colour.css">
+    <link rel="stylesheet" href="typography.css">
+</head>
+
+
+
+<body>
+
+    <!-- container for background color -->
+    <div class="background-color-home"> 
+
+
+    <header>
+        <div class="header-container">  <!-- Seperating from the search bar for later pages -->
+            <img src="Assets/Hamburger.png" alt="Menu" class="menu-icon"> <!-- Icon Image -->
+            
+            <div class="site-title"><h1>A La Carte</h1></div>
+
+            <!-- user and cart icon container-->
+            <div class="user-cart">
+                <img src="Assets/AccountIcon.png" alt="User"> <!-- Icon Image -->
+                <img src="Assets/cart.png" alt="Cart" class="cart-icon"> <!-- Icon Image -->
+                <div class="cart-count">0</div>
+            </div>
+        </div>
+
+        <!-- Search bar container. class for css, id for javascript-->
+        <div class="search-bar">
+            <input type="text" placeholder="Search products..." name="search" class="input" id="input">
+            <img src="Assets/SearchIcon.png" alt="Search" class="search"></img> <!-- Icon Image -->
+        </div>
+    </header>
+
+<main>
+    <!-- Slideshow mock up advertisement section-->
+    <section class="slideshow">
+        <img src="Assets/LeftArrow.png" alt="Left" class="home-left-arrow"> <!-- Icon Image -->
+    
+        <div class="image-wrapper">
+            <img src="Assets/ChefDog.png" alt="Chef Dog" class="chef-dog"> <!-- ChatGPT Image -->
+        </div>  
+
+        <div class="ad-text">
+            <h3>Fresh off the stove...</h3>
+        </div>
+        
+        <!-- Container to responsively design these elements based on screen size-->
+        <div class="button-img">
+            <button type="button" class="buy-now">Buy Now!</button>
+            <img src="Assets/GourmetFood.png" alt="Gourment Food" class="gourmet-food"> <!-- ChatGPT Image -->
+        </div>
+        
+        <img src="Assets/RightArrow.png" alt="Right" class="home-right-arrow"> <!-- Icon Image -->
+    </section>
+
+
+    <!-- Section for directories to dog products and cat products page -->
+    <section class="product-pages">
+        <div class="dog-products">
+            <img src="Assets/Dog.png" alt="Dog Image" class="dog-image">
+            <button class="home-button">DOG PRODUCTS</button>
+        </div>
+
+        <div class="cat-products">
+                <img src="Assets/Cat.png" alt="Cat Image" class="cat-image">
+                <button class="home-button">CAT PRODUCTS</button>
+        </div>
+    </section>
+
+
+    <!-- Container for ingredients and product cards-->
+    <figure class="figure-1">
+
+        <!-- Left side product-->
+        <aside class="product-card-home">
+            <img src="Assets/Dog1.png" alt="Chicken & Rice" class="product-image"> <!-- A La Carte Image-->
+
+            <div class="product-info">
+                <h3>Chicken & Rice</h3>
+                <p>Medium to Large Breeds</p>
+                <p>$39.99</p>
+                <button>View Product</button>
+            </div>
+        </aside>
+
+        <!-- Ingredients inforgraphic -->
+        <section class="ingredients">
+            <img src="Assets/Ingredients.png" alt="Ingredients Infographic" class="ingredients-img">
+
+            <div class="ingredients-text">
+                <figcaption>1. Premium natural ingredients</figcaption>
+                <figcaption>2. Natural anti-oxidants</figcaption>
+                <figcaption>3. Probiotics for instestinal health</figcaption>
+            </div>
+        </section>
+
+        <!-- Right side product -->
+        <aside class="product-card-home">
+            <img src="Assets/Dog3.png" alt="Lamb & Rice" class="product-image">
+
+            <div class="product-info">
+                <h3>Lamb & Rice</h3>
+                <p>All life stages</p>
+                <p>$39.95</p>
+                <button>View Product</button>
+            </div>
+        </aside>
+    </figure>
+
+    <!-- Horizontal Rule to seperate sections -->
+    <hr>
+
+    </div> <!-- Left side product -->
+
+        <!-- About Us section -->
+        <section class="who-are-we">
+            <h1>Who are we?</h1>
+
+            <!-- Image and text container -->
+            <div class="about-us">
+                <p>Creating quality food has always been our family passion. Once we got the idea for 'A La Carte', we took the time to research and create formulas for a large name brand. We knew exactly what we had to do to create the best product possible when it came to making our mark in the pet food market.</p>
+                <img src="Assets/AboutUs.png" alt="Dog on a farm"> <!-- ChatGPT Image -->
+            </div>
+        </section>
+    
+</main>
+    
+   
+
+<footer>
+    <!-- Footer Container -->
+    <div class="footer-container">
+        <div class="footer-links">
+            <a>History</a>
+            <a>About Us</a>
+            <a>Contact</a>
+            <a>Products</a>
+        </div>
+
+        <!-- Social Applications -->
+        <div class="footer-icons">
+            <img src="Assets/X.png" alt="X">
+            <img src="Assets/Insta.png" alt="Instagram">   
+            <img src="Assets/Facebook.png" alt="Facebook">
+            <img src="Assets/Gmail.png" alt="Gmail">
+        </div>
+    </div>
+</footer>
+
+
+<script src="main.js" defer></script>
+<script>
+
+</script>
+</body>
+</html>
